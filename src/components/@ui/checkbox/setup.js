@@ -1,0 +1,10 @@
+export default {
+  props: {
+    value: {
+      type: String,
+    },
+  },
+  data() {
+    return {};
+  },
+};
