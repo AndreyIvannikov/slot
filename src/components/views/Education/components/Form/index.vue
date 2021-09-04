@@ -14,9 +14,8 @@
           ></s-input>
         </v-col>
       </v-row>
-      <pre>{{ form }}</pre>
       {{ fieldValid }} {{ progressWidth }} {{ fieldsDone }}
-      <v-btn :disabled="fieldsDone">отпаравить</v-btn>
+      <v-btn :disabled="fieldsDone" @click="open">отпаравить</v-btn>
     </form>
   </div>
 </template>
@@ -51,6 +50,13 @@
         const form = this.form[i];
         form.value = event;
         form.change = true;
+      },
+      open() {
+        const content = {
+          title: "123123", 
+          content: "213123123123",
+        };
+        this.$store.commit("setContent", content);
       },
     },
     computed: {
