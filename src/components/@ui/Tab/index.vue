@@ -16,6 +16,10 @@
         <slot name="content" :content="currentTab"></slot>
       </div>
     </div>
+    <div class="d-flex justify-space-between cont">
+      <div class="color a"></div>
+    
+    </div>
   </div>
 </template>
 
@@ -38,6 +42,23 @@
 </script>
 
 <style lang="scss" scoped>
+  .cont {
+    width: 400px;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .color {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+  }
+  .a {
+    flex: 1;
+  }
+  .b {
+  }
+  .c {
+  }
   .tab {
     width: 200px;
     color: white;
